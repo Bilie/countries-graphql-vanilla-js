@@ -53,3 +53,24 @@ header h1 {
 .list-item__icon {
   margin: 0 20px 0 0;
 }
+
+.list-item__content {
+  padding: 0 45px 20px;
+  font-size: 14px;
+}
+
+.list-item__label {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: monospace;
+  color: #6e6e6e;
+}
+
+[data-toggle='open'] section {
+  display: block;
+}
+
+[data-toggle='closed'] section {
+  display: none;
+}
