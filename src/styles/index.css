@@ -1,5 +1,5 @@
 body {
-  background-color: #f3f3f3;
+  background-color: mistyrose;
   margin: 0;
   font-family: sans-serif;
   color: #444;
@@ -29,4 +29,20 @@ p {
 
 header h1 {
   padding: 40px 0;
+}
+
+/* Countries list */
+.list-item {
+  padding: 0 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.list-item__headline {
+  display: flex;
+  padding: 16px 0;
+}
+
+.list-item__icon {
+  margin: 0 20px 0 0;
 }
