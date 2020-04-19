@@ -1,5 +1,7 @@
 # How to fetch data from a GraphQL service
 
+Using vanilla JavaScript to consume a GraphQL service.
+
 ## Setup
 
 ```bash
@@ -17,3 +19,9 @@ npm run serve
 ```bash
 npm run build
 ```
+
+## Resources
+
+- [A collective list of public GraphQL APIs](https://github.com/APIs-guru/graphql-apis)
+- [Public GraphQL API for information about countries](https://github.com/trevorblades/countries)
+- [GraphQL - Current Working Draft](https://spec.graphql.org/draft/)
