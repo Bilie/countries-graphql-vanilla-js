@@ -28,9 +28,9 @@ function getCountriesGET() {
     const { data } = await getCountries();
     const { countries } = data;
 
-    // Render countries list
-    document.querySelector('main').appendChild(countryListTemplate(countries));
-
     // Countries list
     console.log(countries);
+
+    // Render countries list
+    document.querySelector('main').innerHTML = countryListTemplate(countries);
 })();
