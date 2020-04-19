@@ -1,7 +1,7 @@
 @import './spinner.css';
 
 body {
-  background-color: mistyrose;
+  background-color: white;
   margin: 0;
   font-family: sans-serif;
   color: #444;
@@ -45,9 +45,14 @@ header h1 {
   border-bottom: 1px solid #eee;
 }
 
+.list-item:last-of-type {
+  border-bottom: none;
+}
+
 .list-item__headline {
   display: flex;
   padding: 16px 0;
+  font-weight: 300;
 }
 
 .list-item__icon {
@@ -73,4 +78,32 @@ header h1 {
 
 [data-toggle='closed'] section {
   display: none;
+}
+
+[data-toggle] {
+  position: relative;
+}
+
+[data-toggle]:hover {
+  cursor: pointer;
+}
+
+[data-toggle]::after {
+  position: absolute;
+  top: 14px;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: block;
+  font-weight: 300;
+  font-size: 24px;
+  color: lightgray;
+}
+
+[data-toggle='open']::after {
+  content: '\2013';
+}
+
+[data-toggle='closed']::after {
+  content: '+';
 }
