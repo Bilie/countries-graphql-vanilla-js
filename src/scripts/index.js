@@ -1,9 +1,13 @@
 // Queries
 import countriesQuery from './queries/countries-query.js';
+// Templates
+import countryListTemplate from './templates/country-list-template.js';
+
+const baseURL = 'https://countries.trevorblades.com/';
 
 // Get countries with a POST request
 function getCountries() {
-    return fetch('https://countries.trevorblades.com/', {
+    return fetch(baseURL, {
         headers: {
             'Content-Type': 'application/json'
         },
@@ -16,13 +20,16 @@ function getCountries() {
 
 // Get countries with a GET request
 function getCountriesGET() {
-    return fetch(`https://countries.trevorblades.com/?query=${countriesQuery}`, {
+    return fetch(`${baseURL}?query=${countriesQuery}`, {
     }).then((res) => res.json());
 }
 
 (async function () {
     const { data } = await getCountries();
     const { countries } = data;
+
+    // Render countries list
+    document.querySelector('main').appendChild(countryListTemplate(countries));
 
     // Countries list
     console.log(countries);
