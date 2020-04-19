@@ -1,6 +1,6 @@
 # How to fetch data from a GraphQL service
 
-Using vanilla JavaScript to consume a GraphQL service.
+Using vanilla JavaScript to consume a GraphQL service: [http://countries-graphql-vanilla-js.surge.sh/](Deployed http://countries-graphql-vanilla-js.surge.sh/)
 
 ## Setup
 
