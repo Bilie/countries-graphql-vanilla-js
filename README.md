@@ -2,6 +2,8 @@
 
 Using vanilla JavaScript to consume a GraphQL service: [http://countries-graphql-vanilla-js.surge.sh/](http://countries-graphql-vanilla-js.surge.sh/)
 
+![example](example.gif)
+
 ## Setup
 
 ```bash
